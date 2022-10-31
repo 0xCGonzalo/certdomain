@@ -28,12 +28,12 @@ cat domtest5.txt | egrep -i "[-a-zA-Z0-9:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(
 
 sed 's/<BR>/\n/g' domtest6.txt | sort -u > domtest7.txt
 
-cat domtest7.txt | egrep -i "^()?[a-z0-9]+([-.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" > sub_ok_certdomain.txt
+cat domtest7.txt | egrep -i "^()?[a-z0-9]+([-.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" > sub_ok_$domain.txt
 
 rm domtest*
 
-cat sub_ok_certdomain.txt
+cat sub_ok_$domain.txt
 
 echo -e ""
 
-echo -e "Results save on $script_dir/sub_ok_certdomain.txt"
+echo -e "Results save on $script_dir/sub_ok_$domain.txt"
