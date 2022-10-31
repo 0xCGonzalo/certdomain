@@ -5,7 +5,7 @@ Bash script to automate the capture of subdomains obtained from https://crt.sh/.
 
 ## Install
 
-- wget https://github.com/0xCGonzalo/certdomain/blob/main/certdomain.sh
+- wget https://raw.githubusercontent.com/0xCGonzalo/certdomain/main/certdomain.sh
 - chmod +x certdomain.sh
 
 ## Use
