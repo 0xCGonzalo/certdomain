@@ -36,4 +36,4 @@ cat sub_ok_$domain.txt
 
 echo -e ""
 
-echo -e "Results save on $script_dir/sub_ok_$domain.txt"
+echo -e "Results save on $(pwd)/sub_ok_$domain.txt"
